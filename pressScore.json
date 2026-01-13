@@ -1,0 +1,5 @@
+[
+  { "domain": "bfmtv.com", "reliability": 40, "violations": ["Biais politique", "Titres sensationnels"] },
+  { "domain": "lemonde.fr", "reliability": 90, "violations": [] }
+]
+

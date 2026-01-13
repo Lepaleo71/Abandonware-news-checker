@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Owlcat Assistant",
+  "version": "0.1.0",
+  "description": "Assistant discret pour signaler les pages avec faible fiabilité",
+  "permissions": [],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Vérifier la source"
+  },
+  "icons": {
+    "16": "assets/owlcat.png",
+    "48": "assets/owlcat.png",
+    "128": "assets/owlcat.png"
+  }
+}
